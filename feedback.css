@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.feedback_form{
+    padding: 3rem;
+	width: 30vw;
+    height: auto;
+	border: 2px dashed green;
+	border-radius: 5px;
+	background-color:#f1f1f1;
+	/*font-family: "Times New Roman",Georgia,Serif;*/
+	font-size: 1rem;
+    margin-top: 10vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+#uname,#uemail{
+    width: 24vw;
+    margin:1vh 0 2vh;
+    padding: 5px;
+}
+#ugender{
+    margin:1vh 0 2vh;
+}
+#ufeedback{
+    width: 24vw;
+    height: 10vh;
+    margin: 1vh 0 3vh;
+    padding: 5px;
+}
+
+.feedback_form label{
+	font-weight:bold;
+    font-size: 1.1rem;
+}
+#clear,#send{
+	border-radius: 5px;
+	outline: none;
+    width: 7vw;
+	height: 5vh;
+	border: 0;
+    padding: 3px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+#clear{
+    color: green;
+	background-color: white;
+    margin-left: 2vw;
+    margin-right: 4vw;
+}
+#send{
+	background-color: green;
+    color: white;
+}
+
+#clear:hover,#send:hover{
+	cursor: pointer;
+	border: 3px dotted yellowgreen;
+}

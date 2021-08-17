@@ -1,0 +1,40 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    background-color: #181818;
+}
+.feedstag{
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+}
+.desc{
+    height: 600px;
+    width: 600px;
+    border:1px solid white;
+    border-radius: 10px;
+    
+}
+.text{
+    color: #EDE5DC;
+    margin: 20px 30px;
+
+}
+.text h1{
+    font-size: 40px;
+}
+.text div{
+    margin: 20px 15px;
+    font-size: 20px;
+}
+.desc img{
+    position:relative;
+    width: 330px;
+    margin: 30px 120px;
+}
+
+.tw{
+    margin-left: 20px;
+}

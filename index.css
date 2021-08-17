@@ -1,0 +1,357 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+#intro,#glr,#aboutme{
+    width: 100%;
+    height: 100vh;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+}
+
+.left{
+    background-color:#181818;
+    height: 100%;
+    width: 35vw;
+    color: #fff;
+}
+.logo{
+    padding: 7vh 1vw ;
+    font-size: 3vw;
+    font-weight: 200;
+}
+
+.right{
+    position: relative;
+    background: #823835;
+    height: 100%;
+    width: 65%;
+}
+
+.color-block{
+    position: absolute;
+    width: 0%;
+    height: 100vh;
+    background: #FFE7E0;
+    animation: to-right 2s cubic-bezier(0.74,0.06,0.4,0.92) forwards;
+}
+
+@keyframes to-right{
+    0%{
+       left: 0;
+       width: 0%; 
+    }
+    50%{
+        right:0;
+        width: 60%;
+    }
+    100%{
+        left: 100%;
+        width: 0;
+    }
+}
+
+.preface{
+    position: absolute;
+    /*height: 40vh;*/
+    width: 35vw;
+    left: 35vw;
+    top: 20vh;
+}
+
+.preface h1{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: #312520;
+    font-weight: 200;
+}
+
+.preface p{
+    margin-left: 0.5rem;
+    font-size: 1.1rem;
+    padding-right: 12rem;
+    color: #EDE5DC;
+    font-weight: 200;
+    text-align:left;
+}
+
+.pic{
+    position: absolute;
+    top: 20vh;
+    left:20vw;
+    height: 65vh;
+    width: 48vw;
+    background: url(./images/hipbox-sasa-Ox-bone-01.png);
+    background-size: cover;
+    box-shadow: 7px 29px 49px 0px rgba(0,0,0,0.3);
+}
+
+/*Navigator*/
+
+.navi {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333333; 
+	position: fixed;
+	width: 100%;
+    z-index: 2;
+}
+.navi li {
+	float: left;
+}
+.navi li a {
+	display:inline-block;
+	color: white;
+	text-align: center;
+	padding: 15px 18px;
+	text-decoration: none;
+}
+
+/*sharing*/
+#share{
+    display: flex;
+    position: fixed;
+    z-index: 3;
+    right: 1vw;
+
+}
+.sharetext{
+    color: wheat;
+    height: 24px;
+    width: 80px;
+    background-color: #181818;
+    border: wheat dashed 1px;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 14px;
+}
+.twitter-button img{
+    margin-left: 10px;
+    margin-top: 6px;
+    width: 29px;
+}
+.weibo-button img{
+    margin-top: 6px;
+    margin-left: 10px;
+    width: 35px;
+}
+
+.navi li a:hover {
+	background-color: #675C72;
+}
+
+
+.tt{
+    color: white;
+    background-color: #181818;
+    display: flex;
+    justify-content: center;
+    padding-top: 10vh;
+}
+
+/*Introduction Part*/
+
+#intro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #181818;
+}
+
+.tab{
+    width: 80vw;
+    height: 80vh;
+    
+    background-color:#823835;
+    overflow: hidden;
+    box-shadow: 5px 25px 40px 0px rgba(116, 9, 9, 0.3);
+    
+}
+
+.tab input{
+    display: none;
+}
+
+.tab label{
+    color: #B5A289;
+    float: left;
+    width: 20vw;
+    height: 6vh;
+    line-height: 6vh;
+    text-align:start;
+    padding-left: 40px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: all .3s;
+    background-color: #EDE5DC;
+    
+}
+
+.tab label:hover{
+    background-color: #823835;
+
+}
+
+.tab label img{
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-top: -5px;
+    margin-right: 10px;
+}
+
+.tab ul{
+    clear: both;
+    width: 400vw;
+    height: 80vh;
+    transition: all .5s;
+}
+
+.tab ul li{
+    float: left;
+    list-style: none;
+    width: 80vw;
+    height: 80vh;
+    padding: 40px;
+    margin-right: 10vw;
+    color: #EDE5DC;
+}
+.tab ul li img{
+    float: left;
+    width: 130px;
+    height: 130px;
+    margin-right: 20px;
+}
+
+.tab ul li p{
+    width: 60vw;
+    align-items: center;
+    justify-content: center;
+    margin: 7vh 10vw;
+    font-size: 1.3rem;
+}
+
+#tab1:checked~ul{
+    margin-left: 0;
+}
+#tab2:checked~ul{
+    margin-left: -88vw;
+}
+#tab3:checked~ul{
+    margin-left: -176vw;
+}
+#tab4:checked~ul{
+    margin-left: -268vw;
+}
+
+#tab1:checked~label[for="tab1"]{
+    background-color: #823835;
+}
+#tab2:checked~label[for="tab2"]{
+    background-color: #823835;
+}
+#tab3:checked~label[for="tab3"]{
+    background-color: #823835;
+}
+#tab4:checked~label[for="tab4"]{
+    background-color: #823835;
+}
+
+/*Gallery*/
+#glr{
+    background-color: #181818;
+    height: auto;
+}
+.gallery{
+    padding-top: 10vh;
+    margin-left: 10vw;
+}
+#gua,#lp,#paii,#umi,#skullPanda,#dimoo,#cranGora,#sasa,#sank,#fairyTale{
+    width: 50vw;
+}
+#guaList,#lpList,#piList,#umiList,#spList,#dmList,#cgList,#sasaList,#sankList,#ftList{
+    margin-left: 3vw;
+    margin-bottom: 5vh;
+}
+
+#guaList img,#lpList img,#piList img,#umiList img,#spList img,#dmList img,#cgList img,#sasaList img,#sankList img,#ftList img{
+    width: 7vw;
+    margin-right: 2px;
+}
+#guaList img:hover,#lpList img:hover,#piList img:hover,#umiList img:hover,#spList img:hover,#dmList img:hover,#cgList img:hover,#sasaList img:hover,#sankList img:hover,#ftList img:hover{
+    border: 3px solid #e29d4e;
+}
+
+/*Juxtapose image div block and text div block*/
+#guabox,#lpbox,#paiibox,#umibox,#spbox,#dimoobox,#cgbox,#sasabox,#sankbox,#ftbox{
+    display: -webkit-box;
+}
+.detailbox{
+    border-radius: 1rem;
+    margin:1vh 2vw 6vh 2vw;
+    width: 30vw;
+    color: #EDE5DC;
+    background-color:#823835 ;
+}
+.ipdetails{
+    margin: 2rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.ipcontent{
+    line-height: 20px;
+}
+
+
+/*About me*/
+#aboutme{
+    height: auto;
+    background-color: #181818;
+    display: flex;
+    padding: 10vh 0 10vh 0;
+    justify-content: center;
+    color: #EDE5DC;
+}
+.text{
+    width: 25vw;
+    text-align: center;
+    color: #EDE5DC;
+}
+
+/*back to top button*/
+#backToTop{
+    position: fixed;
+    right: 0.5vw;
+    bottom: 1vh;
+}
+#backToTop button{  
+    border: none;
+    font-size: 1vw;
+    width: 4vw;
+    height: 4vw;
+    border-radius: 3rem;
+    padding: 0.5vw;
+    color: black; 
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    background-color: #EDE5DC;
+}
+
+#backToTop button:hover{
+    cursor: pointer;
+    background-color: black;
+    color: #EDE5DC;
+    /*when hover, top button rotates 360 degrees in 0.4 seconds*/
+    transform: rotateY(360deg);
+    transition: 0.4s;
+}
+

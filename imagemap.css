@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+#step{
+    display: flex;
+    justify-content: center;
+    margin-top: 3vh;
+}
+img{
+    height: 90vh;
+}

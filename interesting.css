@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #181818;
+}
+
+.container{
+    position: relative;
+    width: 360px;
+    height: 550px;
+    margin-top: 30vh;
+    background-color: rgb(224, 130, 22,0.7);
+    transform: rotate(-30deg) skew(60deg) scale(.5);
+    transition: 2s;
+}
+
+.container img{
+    position:absolute;
+    width: 100%;
+    transition: 0.6s;
+}
+.container:hover img:nth-child(9){
+    transform: translate(900px,-450px) scale(0.1);
+    opacity: 0.1;
+}
+.container:hover img:nth-child(8){
+    transform: translate(800px,-400px) scale(0.2);
+    opacity: 0.2;
+}
+.container:hover img:nth-child(7){
+    transform: translate(700px,-350px) scale(0.3);
+    opacity: 0.3;
+}
+
+.container:hover img:nth-child(6){
+    transform: translate(600px,-300px) scale(0.4);
+    opacity: 0.4;
+}
+.container:hover img:nth-child(5){
+    transform: translate(500px,-250px) scale(0.5);
+    opacity: 0.5;
+}
+.container:hover img:nth-child(4){
+    transform: translate(400px,-200px) scale(0.6);
+    opacity: 0.6;
+}
+.container:hover img:nth-child(3){
+    transform: translate(300px,-150px) scale(0.7);
+    opacity: 0.7;
+}
+.container:hover img:nth-child(2){
+    transform: translate(200px,-100px) scale(0.8);
+    opacity: 0.8;
+}
+.container:hover img:nth-child(1){
+    transform: translate(100px,-50px) scale(0.9);
+    opacity: 0.9;
+}

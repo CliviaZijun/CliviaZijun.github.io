@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+#title{
+	color: green;
+	font-style: italic;
+	font-size: 1rem;
+    margin-bottom: 1vh;
+}
+.sl {
+	margin-top: 5vh;
+	border: 2px solid green;
+	/*font-family: "Times New Roman",Georgia,Serif;*/
+	font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+}
+.sl tr td {
+	padding: 1vh;
+}
+.sl tr th {
+	padding: 1vh;
+	background-color: green;
+	color: white;
+	text-align: left;
+}

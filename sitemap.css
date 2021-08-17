@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.sitemap{
+    display: flex;
+    width: 50vw;
+    height: auto;
+    padding: 1vw;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 5vh;
+    border: 2px dashed green;
+}
+.left,.right{
+    margin-right: 5vw;
+}
+p{
+    font-weight: bold;
+}
+
+li{
+    margin: 3vh;
+}

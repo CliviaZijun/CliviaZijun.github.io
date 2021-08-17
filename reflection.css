@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #191919;
+    color: #EDE5DC;
+}
+hr{
+    margin-bottom: 1vh;
+}
+.text{
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10vh;
+    line-height: 3.5vh;
+    width: 40vw;
+}
+.step{
+    margin-top: 1vh;
+}
+
